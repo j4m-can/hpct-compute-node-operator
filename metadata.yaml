@@ -1,0 +1,22 @@
+# Copyright 2022 Canonical Ltd.
+# See LICENSE file for licensing details.
+
+# For a complete list of supported options, see:
+# https://juju.is/docs/sdk/metadata-reference
+
+name: hpct-compute-node-operator
+display-name: |
+  Compute node operator
+description: |
+  Principal operator for cluster compute node.
+summary: |
+  Principal operator for cluster compute node.
+
+provides:
+  ldap-client-ready:
+    interface: subordinate-ready
+    scope: container
+
+  slurm-client-ready:
+    interface: subordinate-ready
+    scope: container

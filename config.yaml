@@ -1,0 +1,9 @@
+# Copyright 2022 Canonical Ltd.
+# See LICENSE file for licensing details.
+#
+
+options:
+  subordinates:
+    default: ""
+    description: Space-separated list of subordinates to expect/track.
+    type: string
