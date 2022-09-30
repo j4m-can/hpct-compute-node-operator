@@ -11,8 +11,8 @@ import logging
 
 from ops.main import main
 
-from hpctlib.ops.charm.node import NodeCharm
-from hpctlib.interface.relation import interface_registry
+from hpctinterfaces.relation import interface_registry
+from hpctops.charm.node import NodeCharm
 
 
 logger = logging.getLogger(__name__)
